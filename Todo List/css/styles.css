@@ -1,0 +1,19 @@
+.itemsList {
+    font-size: 120%;
+    font-weight: bold;
+    color: #333333;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.showItem {
+    display: block !important;
+}
+
+.form-control {
+    text-transform: capitalize;
+    border-color: #3BAE55;
+}

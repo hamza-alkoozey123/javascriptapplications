@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Todo list</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="row mx-auto col-md-8">
+        <div id="feedback" class="d-none"></div>
+        <h3 class="m-auto py-4">To Do List</h3>
+        <div class="input-group m-auto pb-4">
+          <input id="itemInput" type="text" class="form-control" />
+          <div class="input-group-append">
+            <button id="addItem" class="btn btn-outline-success">
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div id="itemsList" class="w-100"></div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
