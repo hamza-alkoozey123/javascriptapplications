@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     else {
       todoItems.push(itemVal);
-      console.log(todoItems[0]);
+      console.log(itemVal);
       getList(todoItems);
     }
     itemInput.value = "";
