@@ -1,0 +1,20 @@
+{
+    "person":
+    [
+        {
+            "name":"Hamza",
+            "address":"Qerdaha,Lattakia",
+            "phone":"0994310643"
+        },
+        {
+            "name":"Fater",
+            "address":"Qudsia,Damascus",
+            "phone":"0993652185"
+        },
+        {
+            "name":"Ahmad",
+            "address":"Amouda,Alhasaka",
+            "phone":"0998362621"
+        }
+    ]
+}
