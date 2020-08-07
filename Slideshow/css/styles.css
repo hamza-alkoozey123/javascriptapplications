@@ -1,19 +1,99 @@
-.itemsList {
-    font-size: 120%;
-    font-weight: bold;
-    color: #333333;
+.numberText {
+    position: absolute;
+    margin: 5px;
+    color: white;
 }
 
-.completed {
-    text-decoration: line-through;
-    opacity: .5;
+.caption {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+}
+img {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 500ms;
+    border-radius: 10px;
 }
 
-.showItem {
-    display: block !important;
+.mySlides {
+    display: none;
 }
 
-.form-control {
-    text-transform: capitalize;
-    border-color: #803bae;
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+.pointer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    color: rgb(70, 70, 70);
+}
+.pointer:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.349);
+
+}
+#previous {
+    left: 25%;
+    border-radius: 10px 0 0 10px;
+}
+#next {
+    right: 25%;
+    border-radius: 0 10px 10px 0;
+}
+
+.row {
+    position: relative;
+}
+
+#change {
+    -webkit-animation-name: bgChange;
+    -webkit-animation-duration: 1.5s;
+    animation-name: bgChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    /* animation-delay: 1s; */
+}
+
+@keyframes bgChange {
+    from {background-color: red; color: white;}
+    to {background-color: green; color: black;}
+}
+
+.dots a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(179, 179, 179);
+    width: 2%;
+    height: 51%;
+    display: inline-block;
+    border-radius: 20%;
+}
+
+.dots a:hover {
+    transition: linear .3s;
+    background-color: rgb(80, 79, 79);
+}
+
+.active {
+    transition: linear .1s;
+    background-color: rgb(80, 79, 79) !important;
 }
