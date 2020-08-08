@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exercises</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-dark text-light">Hello</div>
+            <div class="col-md-6 bg-dark text-light">Hello</div>
+            <script>
+                var x = "hello there Hamza";
+                console.log("charAt " + x.charAt(4));
+                var y = x.substr(6,2);
+                var z = x.substring(5,10);
+                var n = x.split(" "); //ECMAScript 4
+                var x = false;
+                console.log(y,z,n);
+                console.log(typeof n);
+                console.log(Array.isArray(n)); // ECMA Script 5
+                var array = ["car", "bike", "airplane"];
+                var array1 = [1, 2, 3, 4, 5];
+                array.forEach(myFunction);
+                console.log(array1.reduce(myFunction1));
+                console.log(array1.filter(myFunction2));
+                console.log(array1.every(myFunction3));
+                function myFunction (value) {
+                    console.log(value);
+                }
+                function myFunction1 (total, value) {
+                    return total + value;
+                }
+                function myFunction2 (value) {
+                    return value > 3;
+                }
+                function myFunction3 (value) {
+                    return value > 0;
+                }
+                const arrow = (value) => { return value; }
+                console.log(arrow("Arrow function"));
+                //using setters and getters
+
+                var person = {
+                    name: "Hamza",
+                    age: 26,
+                    language: "arabic",
+                    get lang() {
+                        return this.language;
+                    },
+                    set lang(language) {
+                        this.language = language.toUpperCase();
+                    }
+                };
+
+                person.lang = "English";
+                console.log(person.lang);
+            </script>
+        </div>
+    </div>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
